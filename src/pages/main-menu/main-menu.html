@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+     <ion-title>
+        <button ion-button icon-end (click)="profile()" id="logo">
+          Mi perfil
+          <ion-icon name="bookmarks"></ion-icon>
+        </button>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="container">
+
+  <button (click)="quejaEmpre()" class="card">
+      <img src="../assets/imgs/InovacionEmprendimiento.png" alt="">
+      <strong><p class="positive">Innovación y empredimiento</p></strong> 
+  </button>
+
+  <button (click)="quejaGesti()" class="card">
+      <img src="../assets/imgs/GestionTalento.png" alt="">
+      <strong><p>Talento Humano</p></strong>
+  </button>	
+
+  <button (click)="quejaDif()" class="card">
+      <img src="../assets/imgs/DifusionDivulgacion.png" alt="">
+      <strong><p>Difusión y Divulgación</p></strong>
+  </button>
+
+  <button (click)="quejaInfra()" class="card">
+      <img src="../assets/imgs/InfraestructuraCientifica.png" alt="">
+      <strong><p>Infrastructura Científica y Tecnológica</p></strong>
+  </button>
+
+  <button (click)="quejaDesa()" class="card">
+      <img src="../assets/imgs/DesarrolloCientifico.png" alt="">	
+      <strong><p>Desarrollo Científico y Tecnológico</p></strong>
+  </button>
+
+</ion-content>

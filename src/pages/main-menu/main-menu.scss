@@ -1,0 +1,56 @@
+page-main-menu {
+  .container {
+    font-family: Helvetica;
+    background: rgb(114, 168, 35);
+  }
+
+  #logo {
+    transform: translateX(55vw);
+  }
+
+  button {
+    background: #fff;	
+  }
+
+  .card {
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 20px;   
+    padding: 15px;
+    display: inline;
+
+  }
+
+  .card img {
+    float: left;
+    height: 8vh;
+    border-radius: 100%;
+    margin: 0;
+    margin-right: 15px;
+
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-family: Helvetica;
+    /* color: rgb(108, 189, 69); */
+    margin-left: 0;margin-right: 0;
+    width: 100%;
+    color: gray;
+    text-align: left;
+  }
+
+  #nickname {
+    position: absolute;
+    font-size: 2rem;
+    font-family: Helvetica;
+    color: gray;
+    margin: 5px;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+}

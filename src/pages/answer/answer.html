@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Answer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="createAnswer()">
+    <ion-item>
+      <ion-label floating>Escribe aquí</ion-label>
+      <ion-textarea required [(ngModel)]="comment[0].answer.content" name="answer"></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit" class="submit-btn" block>Enviar
+      <ion-icon name="send"></ion-icon>
+    </button>
+  </form>
+</ion-content>

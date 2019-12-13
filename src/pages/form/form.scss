@@ -1,0 +1,25 @@
+page-form {
+  .main {
+    transform: translateY(20vh);
+  }
+
+  #logo{
+     transform: translateX(80vw);
+  }   
+
+  .submit-btn {
+      background: rgb(114, 168, 35);
+      border-radius: 30px !important;
+      border: 1px solid #ffffff;
+      color: white;
+  }
+  h2 {
+    color: gray;
+    font-family: 'Helvetica';
+  }
+
+  ion-icon {
+    margin-left: 10px;
+  }
+  
+}

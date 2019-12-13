@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Infrastructura</ion-title>
+    <ion-buttons end>
+     <button ion-button icon-only (click)="updateWindow()">
+       <ion-icon name="md-refresh"></ion-icon>
+     </button>
+   </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item *ngFor="let c of content">
+    <div class="queja">
+      <p> {{ c.body }} </p>
+    </div>
+    <p>By: {{ c.username  }}</p>
+    <p>Area: {{ c.name }}</p>
+
+    <div *ngFor="let a of answer">
+      <div *ngIf=" a.complain_id == c.id ">
+        <div class="res-body">
+          <p> {{ a.content }} </p>
+        </div>
+      </div>
+    </div>
+  <button ion-button (click)="mostrarId(c.id)">Responder</button>
+  </ion-item>
+</ion-content>

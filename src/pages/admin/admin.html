@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>List of complains</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <h2>{{ this.userName }}</h2>
+  <ion-item *ngFor="let c of content" >
+    <div class="queja">
+      <p> {{ c.body }} </p>
+    </div>
+      <p>By: {{ c.username  }}</p>
+      <p>Area: {{ c.name }}</p>
+      <p> Id: {{ c.id}}</p>
+      <button ion-button>Responder</button>
+      <div class="respuesta">
+
+      </div>
+  </ion-item>
+</ion-content>

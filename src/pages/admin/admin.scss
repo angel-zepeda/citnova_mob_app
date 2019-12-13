@@ -1,0 +1,28 @@
+page-admin {
+  .queja{
+    word-wrap: break-word !important;
+    background: rgb(114, 168, 35);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 20px 3px 15px 5px;
+  }
+  .queja p {
+    color: white;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .respuesta{
+    padding: 20px;
+    height: 40px;
+    margin: 0px;
+    color: blue;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid blue;
+    visibility: hidden;
+  }
+
+}
+
+

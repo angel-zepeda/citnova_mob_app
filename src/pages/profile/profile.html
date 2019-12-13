@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+     <button ion-button icon-only (click)="updateWindow()">
+       <ion-icon name="md-refresh"></ion-icon>
+     </button>
+   </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item *ngFor="let c of content" >
+
+    <div class="queja">
+      <p> {{ c.body }} </p>
+      <p> {{ c.name }} </p>
+    </div>
+
+    <div *ngFor="let a of answer">
+      <div *ngIf=" a.complain_id == c.id ">
+        <div class="res-body">
+          <p> {{ a.content }} </p>
+        </div>
+      </div>
+    </div>
+
+  </ion-item>
+</ion-content>

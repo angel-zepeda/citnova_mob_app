@@ -1,0 +1,40 @@
+page-innovation {
+  ion-content{
+    background: rgb(218, 230, 176) !important;
+  }
+  .queja{
+      word-wrap: break-word !important;
+      background: rgb(108, 154, 37);
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      padding: 20px 3px 15px 5px;
+    }
+    .queja p {
+      color: white;
+      width: 100%;
+      font-size: 1.4rem;
+    }
+    .respuesta{
+      padding: 20px;
+      height: 40px;
+      color: blue;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      border: 2px solid blue;
+      visibility: hidden;
+    }
+
+    .res-body {
+      margin-top: 10px;
+      background: orange;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: right;
+      font-size: 1.4rem;
+    }
+
+    .res-body p {
+      color: white !important;
+    }
+}
